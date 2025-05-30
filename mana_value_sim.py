@@ -9,7 +9,7 @@ from numpy.random import PCG64DXSM, Generator
 # constants
 DECK_SIZE = 40
 LAND_COUNT = 17
-RNG = Generator(PCG64DXSM(42))
+RNG = Generator(PCG64DXSM(42)) # Remove seed in production code
 
 
 def get_target_card(
